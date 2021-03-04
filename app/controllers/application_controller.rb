@@ -1,3 +1,3 @@
 class ApplicationController < ActionController::Base
-  has_many :topics
+  protect_from_forgery with: :null_sessions
 end
